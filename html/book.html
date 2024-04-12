@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/book.css" />
+    <!-- Assuming you use a common stylesheet -->
+    <title>Boek een afspraak - Mister Chop's Barber Shop</title>
+</head>
+
+<body>
+    <div class="title">Book an Appointment</div>
+    <div class="main-block">
+        <form id="appointment-form" action="../php/handle_appointment.php" method="post">
+            <!-- <label for="appointment-date">Select a Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required> -->
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="name" required />
+
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" name="email" required />
+
+            <label for="customer-phone">Phone Number:</label>
+            <input type="tel" id="customer-phone" name="phone" required />
+
+            <label for="appointment-date">Select a Date:</label>
+            <input type="date" id="appointment-date" name="date" required />
+
+            <label for="appointment-time">Select a Time:</label>
+            <select id="appointment-time" name="time" required>
+                <option value="">Select a Time</option>
+
+            </select>
+            <!-- <label for="appointment-time">Select a Time:</label>
+            <select id="appointment-time" name="time" required>
+                <option value="">Select a Time</option>
+                //php 
+                // Load existing appointments
+                // $appointments = json_decode(file_get_contents('../php/appointments.json'), true) ?? [];
+
+                // Filter out booked time slots for the selected date
+                // $takenSlots = array_column(array_filter($appointments, function ($a) use ($date) {
+                //     return $a['date'] === $date;
+                // }), 'time');
+
+                // Generate available time slots for the same day
+                // $allSlots = [
+                //     '10:00', '10:15', '10:30', '10:45',
+                //     '11:00', '11:15', '11:30', '11:45',
+                //     '12:00', '12:15', '12:30', '12:45',
+                //     '13:00', '13:15', '13:30', '13:45',
+                //     '14:00', '14:15', '14:30', '14:45',
+                //     '15:00', '15:15', '15:30', '15:45',
+                //     '16:00', '16:15', '16:30', '16:45',
+                //     '17:00'
+                // ];
+
+                // $availableSlots = array_diff($allSlots, $takenSlots);
+
+                // foreach ($availableSlots as $slot) {
+                //     echo "<option value=\"$slot\">$slot</option>";
+                // }
+                // ?>
+            </select> -->
+
+            <label for="service">Select a Service:</label>
+            <select id="service" name="service" required>
+                <option value="vip">VIP</option>
+                <option value="haar-baard">HAAR & BAARD KNIPPEN</option>
+                <option value="haarknippen">HAARKNIPPEN</option>
+                <option value="kinderen">KINDEREN KNIPPEN</option>
+                <option value="studenten">STUDENTEN KNIPPEN</option>
+                <option value="ton">TONDEUSE</option>
+                <option value="baard">BAARDKNIPPEN</option>
+                <option value="draad">EPILEREN MET DRAAD</option>
+                <option value="gezicht">GEZICHTSBEHANDELING</option>
+
+                <!-- Add more services as needed -->
+            </select>
+
+            <label for="customer-notes">Notes or Special Requests:</label>
+            <textarea id="customer-notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <!-- Footer with contact information -->
+    <script src="../js/book.js"></script>
+</body>
+
+</html>

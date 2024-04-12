@@ -1,0 +1,197 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+    background-image: url('../fotos/_MG_8903.jpg');
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image in the container */
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: 'Arial', sans-serif;
+    color: #00796B;
+    /* Color for the title */
+    font-size: 40px;
+    /* Larger font size for the title */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* Space below the title */
+}
+
+.rules-box-container {
+    height: 70%;
+    width: 80%;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    background-image: url('../fotos/_MG_8903.jpg');
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the image in the container */
+    background-repeat: no-repeat;
+
+}
+
+
+
+.main-block {
+    width: 75%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-block p {
+    color: #00796B;
+    /* Sets the text color to blue */
+    font-family: 'bebasneue', Arial, sans-serif;
+    font-size: 19px;
+    /* 'bebasneue' with fallbacks */
+}
+
+.main-block:hover {
+    transform: translateY(-5px);
+    /* Slightly raise the box on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255);
+    /* Increase shadow for hover effect */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form input[type="file"] {
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #00796B;
+    /* Adjust color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0c0c0c;
+}
+
+
+.contact-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Full width */
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+}
+
+.contact-item {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    body,
+    html {
+        flex-direction: column;
+        /* Maintain column layout on smaller screens */
+        align-items: stretch;
+        /* Stretch items to full width */
+    }
+
+    .title {
+        font-size: 30px;
+        /* Smaller font size for the title */
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .rules-box-container {
+        height: auto;
+        /* Adjust height for content */
+        width: 95%;
+        /* Increase width for smaller screens */
+        margin-bottom: 20px;
+        padding: 10px;
+        /* Reduce padding */
+    }
+
+    .main-block {
+        width: 90%;
+        /* Increase width of main block */
+        padding: 10px;
+        /* Reduce padding */
+        margin-bottom: 10px;
+    }
+
+    .main-block p {
+        font-size: 16px;
+        /* Smaller font size for text */
+    }
+
+    .contact-form {
+        width: 100%;
+        /* Adjust width for smaller screens */
+        margin-top: 10px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="number"],
+    .contact-form input[type="file"] {
+        margin-bottom: 15px;
+        /* Reduce margin between inputs */
+    }
+
+    .contact-footer {
+        position: relative;
+        /* Adjust position for smaller screens */
+        padding: 10px 0;
+        /* Reduce padding */
+    }
+
+    .contact-item {
+        margin: 5px;
+        /* Adjust margin for contact items */
+    }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index-style.css" />
+    <title>Mister Chop's Barber Shop</title>
+  </head>
+
+  <body>
+    <div class="hamburger-menu">
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776;
+        <!-- Hamburger Icon -->
+      </div>
+      <div class="menu-title" onclick="toggleMenu()">
+        Our Products
+        <!-- Title -->
+      </div>
+    </div>
+
+    <!-- Product Box -->
+    <div class="product-box" id="productBox">
+      <h2>Our Products</h2>
+      <li class="product-item">
+        <div class="product-content">
+          <img
+            src="./fotos/WhatsApp Image 2023-07-14 at 12.00.56.jpeg"
+            alt="Product 1"
+            width="40"
+          />
+          <span class="product-name">NOVON CYBER WAX 7€</span>
+        </div>
+      </li>
+
+      <li class="product-item">
+        <img
+          src="./fotos/WhatsApp Image 2023-07-14 at 12.00.57.jpeg"
+          alt="Product 2"
+          width="40"
+        />
+        <span class="product-name">NOVON GOLD WAX 7€</span>
+      </li>
+      <li class="product-item">
+        <img
+          src="./fotos/WhatsApp Image 2023-07-14 at 12.00.58(1).jpeg"
+          alt="Product 3"
+          width="40"
+        />
+        <span class="product-name">NOVON BARBER COLOGNE 12€</span>
+      </li>
+      <li class="product-item">
+        <img
+          src="./fotos/WhatsApp Image 2023-07-14 at 12.00.58(2).jpeg"
+          alt="Product 4"
+          width="40"
+        />
+        <span class="product-name">SPIDER WAXI 8€</span>
+      </li>
+      <li class="product-item">
+        <img src="./fotos/cream-wax-novon.jpg" alt="Product 5" width="40" />
+        <span class="product-name">NOVON CREAM WAX 8€</span>
+      </li>
+      <li class="product-item">
+        <img
+          src="./fotos/61yAGJtAbAL._AC_SL1500_.jpg"
+          alt="Product 6"
+          width="40"
+        />
+        <span class="product-name">IMPALA BEARD OIL 12€</span>
+      </li>
+      <li class="product-item">
+        <img src="./fotos/image.jpg" alt="Product 7" width="40" />
+        <span class="product-name">NOVON BARBER CLUB 12€</span>
+      </li>
+      <li class="product-item">
+        <img src="./fotos/powder.jpeg" alt="Product 8" width="40" />
+        <span class="product-name">OSSION STYLING POWDER 12€</span>
+      </li>
+      <li class="product-item">
+        <img
+          src="./fotos/i4wzon9pxqxd.jpg"
+          alt="Product 4"
+          width="40"
+          height="60"
+        />
+        <span class="product-name">NOVON AFTER SHAVE 12€</span>
+      </li>
+
+      <button onclick="toggleMenu()">Close</button>
+    </div>
+    <div class="header">
+      <!-- <img src="./fotos/logo.png" alt="Logo" class="logo" /> -->
+      <div class="nav-container">
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="./html/about.html">About Us</a>
+          <a href="./html/contact.html">Contact Us</a>
+          <a href="./html/book.html">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="services">
+        <h2>Our Services</h2>
+        <div class="service" id="vip-service">
+          <div
+            class="service-info"
+            onclick="toggleDescription('vip-description')"
+          >
+            <h3>VIP</h3>
+            <img
+              src="./fotos/DALL·E 2024-01-16 12.58.56 - 1. An elegant and modern icon representing VIP Service for a barber shop, featuring a crown or luxury symbol. The icon should be stylish, clear, and e.png"
+              alt="VIP Service"
+              width="45px"
+            />
+          </div>
+          <div class="service-description" id="vip-description">
+            <p>
+              In mijn VIP-afdeling, krijgen klanten de beste behandeling.
+              Knippen, stylen en epileren, alles tot in de puntjes beheren.
+              Gezichtsverzorging voor een stralende huid, haarwassen met zorg,
+              een warme handdoek, zo zacht en fijn. Terwijl ik je haar föhn,
+              voel je je als een vorst(in) zijn.
+            </p>
+          </div>
+        </div>
+
+        <div class="service" id="haircut-service">
+          <div
+            class="service-info1"
+            onclick="toggleDescription('haircut-description')"
+          >
+            <h3>HAARKNIPPEN</h3>
+            <img
+              src="./fotos/DALL·E 2024-01-16 12.58.59 - 2. A stylish and modern icon for Haircut Service in a barber shop, featuring scissors or a comb. The icon should be sleek, easily recognizable, and su.png"
+              alt="VIP Service"
+              width="45px"
+            />
+          </div>
+          <div class="service-description" id="haircut-description">
+            <p>
+              MANNEN & VROUWEN Ontdek onze barbershop voor de perfecte haircut
+              die bij jou past. Onze ervaren kappers zijn experts in het knippen
+              en stylen van haar. Of je nu op zoek bent naar een klassieke look
+              of een trendy snit, wij zorgen ervoor dat je met een frisse en
+              stijlvolle haarstijl de deur uitgaat.
+            </p>
+          </div>
+        </div>
+
+        <div class="service" id="beard-trimming-service">
+          <div
+            class="service-info2"
+            onclick="toggleDescription('beard-description')"
+          >
+            <h3>BAARDKNIPPEN</h3>
+            <img src="./fotos/baard.png" alt="VIP Service" width="45px" />
+          </div>
+          <div class="service-description" id="beard-description">
+            <p>
+              Laat je baard tot in de perfectie verzorgen in onze barbershop.
+              Onze bekwame barbiers zijn meesters in het trimmen, stylen en
+              verzorgen van baarden
+            </p>
+          </div>
+        </div>
+
+        <div class="service" id="beard-trimming-service">
+          <div
+            class="service-info3"
+            onclick="toggleDescription('wax-description')"
+          >
+            <h3>WAXEN</h3>
+            <img src="./fotos/waxen.png" alt="VIP Service" width="45px" />
+          </div>
+          <div class="service-description" id="wax-description">
+            <p>
+              Ervaar de gladheid en verzorging van professioneel waxen in onze
+              barbershop. Onze getalenteerde waxspecialisten zorgen voor een
+              gladde en langdurige ontharing. Of je nu je wenkbrauwen, neus,
+              oren of andere delen van je gezicht wilt laten waxen
+            </p>
+          </div>
+        </div>
+
+        <div class="service" id="beard-trimming-service">
+          <div
+            class="service-info4"
+            onclick="toggleDescription('gezicht-description')"
+          >
+            <h3>GEZICHTSBEHANDELING</h3>
+            <img src="./fotos/gezicht.png" alt="VIP Service" width="45px" />
+          </div>
+          <div class="service-description" id="gezicht-description">
+            <p>
+              Ontdek de ultieme verwennerij met onze op maat gemaakte
+              gezichtsbehandelingen in onze barbershop. Onze ervaren
+              schoonheidsspecialisten bieden een breed scala aan
+              gezichtsbehandelingen om je huid te reinigen, te voeden en te
+              verjongen
+            </p>
+          </div>
+        </div>
+
+        <div class="service" id="beard-trimming-service">
+          <div
+            class="service-info5"
+            onclick="toggleDescription('draad-description')"
+          >
+            <h3>EPILERENMETDRAAD</h3>
+            <img src="./fotos/draad.png" alt="VIP Service" width="45px" />
+          </div>
+          <div class="service-description" id="draad-description">
+            <p>
+              Ervaar de precisie en effectiviteit van het epileren met draad in
+              onze barbershop.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="prices">
+        <h2>Price List</h2>
+        <ul>
+          <li>VIP - 75 €</li>
+          <li>HAAR & BAARD KNIPPEN - 43 €</li>
+          <li>HAARKNIPPEN - 26 €</li>
+          <li>KINDEREN KNIPPEN - 19,50 €</li>
+          <li>STUDENTEN KNIPPEN 24 €</li>
+          <li>TONDEUSE - 20 €</li>
+          <li>BAARDKNIPPEN - 17 €</li>
+          <li>EPILEREN MET DRAAD vanaf - 7 €</li>
+          <li>GEZICHTSBEHANDELING - 50 €</li>
+
+          <!-- Add more prices as needed -->
+        </ul>
+      </div>
+      <div id="descriptionModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <p id="modalContent"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Additional content goes here -->
+    <script src="./js/products.js"></script>
+    <script src="./js/dis.js"></script>
+  </body>
+</html>

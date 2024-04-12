@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Us - Mister Chop's Barber Shop</title>
+</head>
+
+<body>
+
+    <div class="rules-box-container">
+        <div class="title">Contact Ons</div>
+        <div class="main-block">
+            <p>Ben jij een gepassioneerde kapper of kapster met een scherp oog voor detail? Dan zijn wij op zoek naar
+                jou!
+
+                Creativiteit: Heb je het vermogen om overal nieuwe mogelijkheden te zien?
+                Flexibiliteit: Ben je klaar om je aan te passen in een dynamische werkomgeving?
+                Ervaring: Beschik je over ervaring in het kappersvak? Fantastisch! Maar zelfs als je pas begint,
+                moedigen we je aan te solliciteren.
+                Stressbestendigheid: Kun je goed omgaan met de uitdagingen van een levendige barbierszaak?
+
+                Dit is je kans als jij jezelf ziet als een barbier die klaar staat voor een spannende uitdaging. Bij ons
+                kun je je eigen werktijden beheren en samenwerken met twee ervaren collega-barbiers.
+
+                Wij bieden een plek waar jouw talent en expertise worden erkend en gewaardeerd. Vul je gegevens
+                hieronder dan nemen we contact met je op</p>
+            <!-- Additional content... -->
+            <form action="../php/handle_contact.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="cv">Upload CV:</label>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer class="contact-footer">
+        <div class="contact-item"><strong>Adres:</strong> Nederland, Uilenpad 1, Bilthoven</div>
+        <div class="contact-item"><strong>Telefoonnummer:</strong> 0684504925</div>
+        <div class="contact-item"><strong>Email:</strong> Misterchop3@gmail.com</div>
+        <div class="contact-item"><strong>Telefoon:</strong> 0306330569</div>
+    </footer>
+</body>
+
+
+
+</html>

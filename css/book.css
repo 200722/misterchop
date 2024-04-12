@@ -1,0 +1,157 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Add this line */
+    flex-direction: column;
+    /* Align items vertically */
+    justify-content: center;
+    /* Center items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    background-image: url('../fotos/_MG_8903.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.title {
+    font-family: 'Arial', sans-serif;
+    color: #00796B;
+    /* Color for the title */
+    font-size: 40px;
+    /* Larger font size for the title */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    /* Space below the title */
+}
+
+
+.main-block {
+    width: 75%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-block p {
+    color: #00796B;
+    /* Sets the text color to blue */
+    font-family: 'bebasneue', Arial, sans-serif;
+    font-size: 19px;
+    /* 'bebasneue' with fallbacks */
+}
+
+.main-block:hover {
+    transform: translateY(-5px);
+    /* Slightly raise the box on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255);
+    /* Increase shadow for hover effect */
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="date"],
+input[type="time"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #00796B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005B4F;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    body,
+    html {
+        /* Maintain current layout with minor adjustments as needed */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 30px;
+        /* Smaller font size for the title */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-block {
+        width: 90%;
+        /* Increase width of main block for smaller screens */
+        padding: 15px;
+        /* Reduce padding */
+        margin-bottom: 15px;
+    }
+
+    .main-block p {
+        font-size: 16px;
+        /* Smaller font size for text */
+    }
+
+    #appointment-form {
+        max-width: 90%;
+        /* Adjust max-width for smaller screens */
+        margin-top: 10px;
+        margin-left: 0;
+        /* Remove additional left margin */
+        align-items: center;
+        /* Center items if needed */
+    }
+
+    label {
+        margin-top: 10px;
+        /* Adjust top margin for labels */
+    }
+
+    input[type="date"],
+    input[type="time"],
+    select,
+    button {
+        width: 100%;
+        /* Ensure full width for inputs and button */
+        padding: 8px;
+        /* Adjust padding */
+    }
+
+    button {
+        margin-top: 15px;
+        /* Adjust top margin for button */
+    }
+}

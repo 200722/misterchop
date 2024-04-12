@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* This ensures padding doesn't affect the overall dimensions */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-image: url('./fotos/_MG_8972.jpg');
+   */
+  /* background-color: #50c878; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  padding: 0;
+  border: none;
+  background-image: url("../fotos/IMG_7587.jpg");
+  /* Add your background image here */
+  background-size: cover;
+
+  /* This ensures the background covers the entire header */
+  background-position: center;
+  /* This centers the background image */
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.nav {
+  /* margin-bottom: -200px;
+  border-radius: 5px; */
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 5px;
+  /* Adjust as needed */
+}
+
+.nav a {
+ margin: 0 15px;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+ 
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #009688;
+  /* Change color on hover/focus */
+  transform: scale(1.1);
+  /* Slightly enlarge the link */
+  background-color: #f0f0f0;
+  /* Optional: Change background color */
+}
+
+.nav a:active {
+  color: #00796b;
+  /* Color for when the link is clicked */
+  transform: scale(1.2);
+  /* Further enlarge the link on click */
+  background-color: #e0e0e0;
+  /* Optional: Change background color on click */
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.services,
+.prices {
+  width: 45%;
+  /* Adjust width as needed */
+  padding: 15px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* Optional: adds a subtle shadow */
+  border-radius: 10px;
+  /* Rounded corners */
+
+  margin: 10px 0;
+  /* Spacing between boxes */
+  /* box-shadow: 0px 0px 10px 5px #ffd700;
+  box-shadow:    0px 0px 20px 10px rgba(255, 215, 0, 0.6); */
+  box-shadow: 0px 0px 30px 15px rgba(34, 139, 34, 0.4);
+  /* box-shadow: 0px 0px 10px 5px #228b22; */
+  /* Subtle shadow for depth */
+  background-color: #f0f0f0;
+  /* White background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* border: 2px solid #00796B; */
+  /* Smooth transition for hover effect */
+}
+
+.prices {
+  /* box-shadow: 0px 0px 10px 5px #0056b3; */
+  box-shadow: 0px 0px 30px 15px rgba(0, 86, 179, 0.4);
+}
+
+.services:hover,
+.prices:hover {
+  transform: translateY(-5px);
+  /* Slightly raise the box */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Larger shadow on hover */
+}
+
+.service-info {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+  /* overflow: hidden; */
+}
+
+.service-info h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info:hover {
+  transform: translateY(-5px);
+  /* Slightly raise the box */
+}
+
+.service-info1 {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.service-info1 h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info1:hover {
+  transform: translateY(-5px);
+
+  /* Slightly raise the box */
+}
+
+.service-info2 {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.service-info2 h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info2:hover {
+  transform: translateY(-5px);
+  /* Slightly raise the box */
+}
+
+.service-info3 {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.service-info3 h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info3:hover {
+  transform: translateY(-5px);
+
+  /* Slightly raise the box */
+}
+
+.service-info4 {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.service-info4 h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info4:hover {
+  transform: translateY(-5px);
+
+  /* Slightly raise the box */
+}
+
+.service-info5 {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.service-info5 h3 {
+  margin-right: 20px;
+  /* Add some space between the image and text */
+}
+
+.service-info5:hover {
+  transform: translateY(-5px);
+
+  /* Slightly raise the box */
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  /* Larger font size for titles */
+  font-weight: bold;
+  /* Make the title bold */
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none
+  padding: 0;
+  font-size: 2px;
+  /* Larger font size for titles */
+  font-weight: bold;
+  /* Make the title bold */
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+  font-size: 19px;
+  /* Larger font size for titles */
+  font-weight: bold;
+  /* Make the title bold */
+  margin-bottom: 13px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  text-align: center;
+  /* Center align the content */
+}
+
+.hamburger-menu .menu-icon {
+  cursor: pointer;
+  font-size: 190px;
+  /* Increase the size of the icon */
+  color: #00796b;
+  /* Adjust color to match your theme */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+  background-color: #333;
+  border-radius: 20px;
+}
+
+.hamburger-menu .menu-icon:hover {
+  transform: rotate(90deg);
+  /* Rotate icon on hover for interactive effect */
+}
+
+.hamburger-menu .menu-title {
+  display: block;
+  /* Ensure title is on a new line */
+  color: #00796b;
+  /* Match color with icon */
+  font-size: 26px;
+  /* Adjust title size */
+  margin-top: 5px;
+  /* Space between icon and title */
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 20px;
+}
+
+/* Product Box Styles */
+.product-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 40%;
+  max-width: 600px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  overflow: auto;
+  /* Enable scrolling if content exceeds box height */
+}
+
+.product-box h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.product-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  /* Vertically center the content */
+}
+
+.product-name {
+  font-size: 1em;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.product-box ul li {
+  margin-bottom: 1px;
+  /* More space between items */
+  font-size: 10px;
+  /* Larger font size */
+  color: #333;
+  /* Darker color for elegance */
+}
+
+.product-box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00796b;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* Transition effect for button */
+}
+
+.product-box button:hover {
+  background-color: #005b4f;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1001;
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 80%;
+  /* Limit the maximum height of the modal */
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Hide the video container by default */
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    /* height: 30vh;
+    background-size: cover;
+    background-position: center; */
+    height: 30vh;
+  }
+
+  .logo {
+    width: 50px;
+    /* Adjust logo size for smaller screens */
+  }
+
+  .nav-container {
+    justify-content: space-around;
+  }
+
+  .nav {
+       flex-wrap: nowrap;
+       justify-content: space-around; 
+       margin: 0 -5px;
+       margin-top: 9rem;
+  }
+
+  .nav a {
+    margin: 0 1px; /* Adjusted margin between nav links */
+    font-size: 14px; /* Smaller font size for nav links */
+    padding: 5px 8px; /* Adjust padding for nav links */
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .content {
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center content items */
+    margin-top: 10px;
+  }
+
+  .services,
+  .prices {
+    width: 100%;
+    /* Full width for service and price sections */
+    margin: 10px 0;
+    box-shadow: 0px 0px 20px 10px rgba(34, 139, 34, 0.3);
+  }
+
+  .service-info h3,
+  .service-info1 h3,
+  .service-info2 h3,
+  .service-info3 h3,
+  .service-info4 h3,
+  .service-info5 h3 {
+    margin-right: 20px;
+    /* Adjust margin for smaller screens */
+  }
+
+  h2 {
+    font-size: 20px;
+    /* Smaller font size for headings */
+  }
+
+  ul {
+    font-size: 16px;
+    /* Adjust font size for lists */
+  }
+
+  li {
+    font-size: 15px;
+    /* Adjust font size for list items */
+  }
+
+  .hamburger-menu {
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    /* Smaller hamburger menu icon */
+  }
+
+  .hamburger-menu .menu-title {
+    font-size: 15px;
+    /* Smaller font size for menu title */
+  }
+
+  .hamburger-menu .menu-icon {
+    cursor: pointer;
+    font-size: 55px;
+    /* Increase the size of the icon */
+    color: #00796b;
+    /* Adjust color to match your theme */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    background-color: #333;
+    border-radius: 20px;
+  }
+
+  .product-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    translate: (-70%, -38%) scale(1);
+    width: 50%;
+    height: 20%;
+    max-width: 200px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    overflow: auto;
+  }
+
+  .product-box h2,
+  .modal-content h2 {
+    font-size: 1.5em;
+    /* Smaller font size for product and modal titles */
+  }
+
+  .product-box ul li,
+  .modal-content ul li {
+    font-size: 14px;
+    /* Smaller font size for product and modal list items */
+  }
+
+  .modal-content {
+    width: 90%;
+    /* Adjust modal width for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1600px) {
+  .header {
+    height: 30vh;
+    /* Adjust header height for smaller screens */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo {
+    width: 80px;
+    /* Adjust logo size for smaller screens */
+  }
+
+  .nav-container {
+    justify-content: space-around;
+  }
+
+  .nav {
+    margin-bottom: 0;
+    /* Adjust nav margin for smaller screens */
+  }
+
+  .nav a {
+    margin: 0 15px;
+    /* Reduce margin between nav links */
+    font-size: 25px;
+    /* Smaller font size for nav links */
+    padding: 5px 8px;
+    /* Adjust padding for nav links */
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .content {
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center content items */
+    margin-top: 10px;
+  }
+
+  .services,
+  .prices {
+    width: 100%;
+    /* Full width for service and price sections */
+    margin: 10px 0;
+    box-shadow: 0px 0px 20px 10px rgba(34, 139, 34, 0.3);
+  }
+
+  .service-info h3,
+  .service-info1 h3,
+  .service-info2 h3,
+  .service-info3 h3,
+  .service-info4 h3,
+  .service-info5 h3 {
+    margin-right: 20px;
+    /* Adjust margin for smaller screens */
+  }
+
+  h2 {
+    font-size: 20px;
+    /* Smaller font size for headings */
+  }
+
+  ul {
+    font-size: 16px;
+    /* Adjust font size for lists */
+  }
+
+  li {
+    font-size: 15px;
+    /* Adjust font size for list items */
+  }
+
+  .hamburger-menu {
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    /* Smaller hamburger menu icon */
+  }
+
+  .hamburger-menu .menu-title {
+    font-size: 15px;
+    /* Smaller font size for menu title */
+  }
+
+  .hamburger-menu .menu-icon {
+    cursor: pointer;
+    font-size: 55px;
+    /* Increase the size of the icon */
+    color: #00796b;
+    /* Adjust color to match your theme */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    background-color: #333;
+    border-radius: 20px;
+  }
+
+  .product-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    translate: (-70%, -38%) scale(1);
+    width: 60%;
+    height: 30%;
+    max-width: 400px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    overflow: auto;
+  }
+
+  .product-box h2,
+  .modal-content h2 {
+    font-size: 1.5em;
+    /* Smaller font size for product and modal titles */
+  }
+
+  .product-box ul li,
+  .modal-content ul li {
+    font-size: 14px;
+    /* Smaller font size for product and modal list items */
+  }
+
+  .modal-content {
+    width: 90%;
+    /* Adjust modal width for smaller screens */
+  }
+}
