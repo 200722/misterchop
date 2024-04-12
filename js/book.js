@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hour.toString().padStart(2, "0") +
         ":" +
         minute.toString().padStart(2, "0");
-      options += <option value="${timeString}">${timeString}</option>;
+      options += `<option value="${timeString}">${timeString}</option>`;
     }
 
     timePicker.innerHTML = options;
