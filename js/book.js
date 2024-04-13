@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedDay = new Date(this.value).getDay();
 
     // Check if the selected day is Sunday (0), Monday (1), or Friday (5)
-    if ([0, 1, 5].includes(selectedDay)) {
-      alert("Op zondag, maandag en vrijdag zijn er geen afspraken mogelijk");
+    if ([0, 1].includes(selectedDay)) {
+      alert("Op zondag, maandag zijn er geen afspraken mogelijk");
       this.value = "";
       timePicker.innerHTML = "";
     } else {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
       case 4: // Thursday
         startTime = 10 * 60; // 10:00 AM in minutes
-        endTime = 18 * 60 + 45; // 6:45 PM in minutes
+        endTime = 19 * 60 + 45; // 6:45 PM in minutes
         break;
       case 2: // Tuesday
       case 3: // Wednesday

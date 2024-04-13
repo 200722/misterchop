@@ -1,250 +1,246 @@
 body,
 html {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    /* Light background for the whole page */
-    color: #333;
-    /* Dark text for readability */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  /* Light background for the whole page */
+  color: #333;
+  /* Dark text for readability */
 }
 
 .title {
-    font-family: 'Arial', sans-serif;
-    color: #00796B;
-    /* Color for the title */
-    font-size: 40px;
-    /* Larger font size for the title */
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* Space below the title */
+  font-family: "Arial", sans-serif;
+  color: #00796b;
+  /* Color for the title */
+  font-size: 40px;
+  /* Larger font size for the title */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* Space below the title */
 }
 
 .rules-box-container {
-    width: 80%;
-    margin: 0 auto;
-    /* Center the container */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center the content vertically */
+  width: 80%;
+  margin: 0 auto;
+  /* Center the container */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the content vertically */
 }
 
 .main-block {
-    font-family: 'bebasneue', Arial, sans-serif;
-    background-color: #ffffff;
-    /* Keep the background white for contrast */
-    width: 75%;
-    /* Adjust width as needed */
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    /* Larger shadow for a 'lifting' effect */
-    border: 2px solid #00796B;
-    /* Solid border, choose a color that fits your theme */
-    border-radius: 15px;
-    /* Rounded corners for a softer look */
-    text-align: center;
-    /* Center-align the text */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
+  font-family: "bebasneue", Arial, sans-serif;
+  background-color: #ffffff;
+  /* Keep the background white for contrast */
+  width: 75%;
+  /* Adjust width as needed */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Larger shadow for a 'lifting' effect */
+  border: 2px solid #00796b;
+  /* Solid border, choose a color that fits your theme */
+  border-radius: 15px;
+  /* Rounded corners for a softer look */
+  text-align: center;
+  /* Center-align the text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effect */
 }
 
 .main-block:hover {
-    transform: translateY(-5px);
-    /* Slightly raise the box on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    /* Increase shadow for hover effect */
+  transform: translateY(-5px);
+  /* Slightly raise the box on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  /* Increase shadow for hover effect */
 }
 
 .main-block p {
-    color: #00796B;
-    /* Sets the text color to blue */
-    font-family: 'bebasneue', Arial, sans-serif;
-    font-size: 17px;
-    /* 'bebasneue' with fallbacks */
+  color: #00796b;
+  /* Sets the text color to blue */
+  font-family: "bebasneue", Arial, sans-serif;
+  font-size: 17px;
+  /* 'bebasneue' with fallbacks */
 }
 
 .side-blocks-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .side-block1 {
-    background-color: #e0e0e0;
-    width: 35%;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 0 10px;
-    overflow: hidden;
+  background-color: #e0e0e0;
+  width: 35%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 10px;
+  overflow: hidden;
 }
 
 .side-block1:hover {
-    transform: translateY(-5px);
-    /* Slightly raise the box on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    /* Increase shadow for hover effect */
+  transform: translateY(-5px);
+  /* Slightly raise the box on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  /* Increase shadow for hover effect */
 }
 
 .side-block1 p {
-    color: #00796B;
-    /* Sets the text color to blue */
-    font-family: 'bebasneue', Arial, sans-serif;
-    /* 'bebasneue' with fallbacks */
+  color: #00796b;
+  /* Sets the text color to blue */
+  font-family: "bebasneue", Arial, sans-serif;
+  /* 'bebasneue' with fallbacks */
 }
 
 .side-block1-image {
-    width: 100%;
-    /* Makes the image responsive */
-    height: auto;
-    overflow: hidden;
-    /* Maintains the aspect ratio */
-    border-radius: 10px;
-    /* Optional: rounds the corners of the image */
-    margin-bottom: 15px;
-    /* Adds some space between the image and the text */
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+  /* Maintains the aspect ratio */
+  border-radius: 10px;
+  /* Optional: rounds the corners of the image */
+  margin-bottom: 15px;
+  /* Adds some space between the image and the text */
 }
 
 .side-block2 {
-    background-color: #e0e0e0;
-    width: 35%;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 0 10px;
+  background-color: #e0e0e0;
+  width: 35%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 10px;
 }
 
-
 .side-block2-image {
-    width: 100%;
-    /* Responsive image width */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 10px;
-    /* Rounded corners, optional */
-    margin-bottom: 15px;
-    /* Space between image and text */
+  width: 100%;
+  /* Responsive image width */
+  height: 17rem;
+  /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Rounded corners, optional */
+  margin-bottom: 15px;
+  /* Space between image and text */
 }
 
 .side-block2 p {
-    color: #00796B;
-    /* Sets the text color to blue */
-    font-family: 'bebasneue', Arial, sans-serif;
-    /* 'bebasneue' with fallbacks */
+  color: #00796b;
+  /* Sets the text color to blue */
+  font-family: "bebasneue", Arial, sans-serif;
+  /* 'bebasneue' with fallbacks */
 }
 
 .side-block2:hover {
-    transform: translateY(-5px);
-    /* Slightly raise the box on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    /* Increase shadow for hover effect */
+  transform: translateY(-5px);
+  /* Slightly raise the box on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  /* Increase shadow for hover effect */
 }
 
 .go-back-button {
+  text-align: center;
+  margin-top: -10px;
+
+  /* Add some top margin for spacing */
+}
+
+.go-back-button a {
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button a:hover {
+  background-color: #005951;
+  /* Change background color on hover */
+}
+
+@media only screen and (max-width: 800px) {
+  body,
+  html {
+    /* Maintain current layout with minor adjustments as needed */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title {
+    font-size: 30px;
+    /* Smaller font size for the title */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-block {
+    width: 90%;
+    /* Increase width of main block for smaller screens */
+    padding: 15px;
+    /* Reduce padding */
+    margin-bottom: 15px;
+  }
+
+  .main-block p {
+    font-size: 16px;
+    /* Smaller font size for text */
+  }
+
+  #appointment-form {
+    max-width: 90%;
+    /* Adjust max-width for smaller screens */
+    margin-top: 10px;
+    margin-left: 0;
+    /* Remove additional left margin */
+    align-items: center;
+    /* Center items if needed */
+  }
+
+  label {
+    margin-top: 10px;
+    /* Adjust top margin for labels */
+  }
+
+  input[type="date"],
+  input[type="time"],
+  select,
+  button {
+    width: 100%;
+    /* Ensure full width for inputs and button */
+    padding: 8px;
+    /* Adjust padding */
+  }
+
+  button {
+    margin-top: 15px;
+    /* Adjust top margin for button */
+  }
+
+  .go-back-button {
     text-align: center;
     margin-top: -10px;
 
     /* Add some top margin for spacing */
-}
+  }
 
-.go-back-button a {
-    background-color: #00796B;
+  .go-back-button a {
+    background-color: #00796b;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
+  }
 
-.go-back-button a:hover {
+  .go-back-button a:hover {
     background-color: #005951;
     /* Change background color on hover */
-}
-
-@media only screen and (max-width: 800px) {
-
-    body,
-    html {
-        /* Maintain current layout with minor adjustments as needed */
-        background-size: cover;
-        background-position: center;
-    }
-
-    .title {
-        font-size: 30px;
-        /* Smaller font size for the title */
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .main-block {
-        width: 90%;
-        /* Increase width of main block for smaller screens */
-        padding: 15px;
-        /* Reduce padding */
-        margin-bottom: 15px;
-    }
-
-    .main-block p {
-        font-size: 16px;
-        /* Smaller font size for text */
-    }
-
-    #appointment-form {
-        max-width: 90%;
-        /* Adjust max-width for smaller screens */
-        margin-top: 10px;
-        margin-left: 0;
-        /* Remove additional left margin */
-        align-items: center;
-        /* Center items if needed */
-    }
-
-    label {
-        margin-top: 10px;
-        /* Adjust top margin for labels */
-    }
-
-    input[type="date"],
-    input[type="time"],
-    select,
-    button {
-        width: 100%;
-        /* Ensure full width for inputs and button */
-        padding: 8px;
-        /* Adjust padding */
-    }
-
-    button {
-        margin-top: 15px;
-        /* Adjust top margin for button */
-    }
-
-    .go-back-button {
-        text-align: center;
-        margin-top: -10px;
-
-        /* Add some top margin for spacing */
-    }
-
-    .go-back-button a {
-        background-color: #00796B;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
-
-    .go-back-button a:hover {
-        background-color: #005951;
-        /* Change background color on hover */
-    }
-
+  }
 }
